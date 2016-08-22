@@ -1,0 +1,27 @@
+<!-- form for updating table data -->
+<form id='wkUpdate' action='/update'>
+  <fieldset>
+    <legend>Enter your workout info:</legend>
+    <label for='name'>Workout name:</label>
+      <input type='text' name='name' id='name' value='{{results.name}}' required></br>
+    <label for='reps'>Number of reps: </label>
+      <input type='number' name='reps' id='reps' value='{{results.reps}}' required></br>
+    <label for='weight'>Weight:</label>
+      <input type='number' name='weight' id='weight' value='{{results.weight}}' required></br>
+    <label for='date'>Date: </label>
+      <input type='date' name='date' id='date' value='{{results.date}}' required></br>
+    {{#if results.lbs}}
+      <label for='lbs'>Lbs</label>
+        <input type='radio' name='lbs' value='1' id='lbs' checked='checked'>
+      <label for='kgs'>Kgs</label>
+        <input type='radio' name='lbs' value='0' id='kgs'></br>
+    {{else}}
+      <label for='lbs'>Lbs</label>
+        <input type='radio' name='lbs' value='1' id='lbs'>
+      <label for='kgs'>Kgs</label>
+        <input type='radio' name='lbs' value='0' id='kgs' checked='checked'></br>
+    {{/if}}
+    <input type='hidden' name='id' value='{{results.id}}'>
+    <input type='submit' id='submit' value='Submit workout'>
+  </fieldset>
+</form>
