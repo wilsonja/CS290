@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX Weather</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Access Your Local Weather</legend>
+				<label for="userCity">Enter your city name: </label>
+				<input type="text" name="userCity" id="userCity"><br />
+				<label for="userState">Enter your state name: </label>
+				<input type="text" name="userState" id="userState"><br />
+				<input type="submit" id="citySubmit">
+				<p>Or search by zip code</p>
+				<label for="userZip">Enter your zip code: </label>
+				<input type="text" name="userZip" id="userZip"><br />
+				<input type="submit" id="zipSubmit">
+			</fieldset>
+		</form>
+		<div>
+			<h2>Your local weather:</h2>
+			<ul>
+				<li><span>City: </span><span id="curCity"></span></li>
+				<li><span>Current Temperature: </span><span id="curTemp"></span>&deg;F</li>
+				<li><span>Relative Humidity: </span><span id="curHumidity"></span>%</li>
+				<li><span>Description: </span><span id="description"></span></li>
+			</ul>
+		</div>
+		<script src="weather.js"></script>
+	</body>
+</html>
