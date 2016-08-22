@@ -1,0 +1,97 @@
+table {
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 7px 10px 10px 10px;
+  text-align: left;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #efefef;
+}
+
+fieldset {
+  width: 600px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend {
+  background-color: #efefef;
+  font-weight: bold;
+  border: 1px solid #dcdcdc;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#wkDetails {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 6px 12px;
+    margin: 6px 0;;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+  width: 25%;
+  padding: 6px 12px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  width: 25%;
+  padding: 6px 12px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  width: 25%;
+  padding: 6px 12px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  background-color: #efefef;
+  text-transform: uppercase;
+  margin: 6px 2px;
+  border: 1px solid #dcdcdc;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #555;
+  color: white;
+}
+
+input:focus {
+  border: 3px solid #555;
+}
