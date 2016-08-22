@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if(req.status >= 200 && req.status < 400) {
         var response = JSON.parse(req.responseText);
         var table = document.getElementById('wkBody');
-        var newTable = document.createElement('tbody');   // create a new table to add new entries to
+        var newTable = document.createElement('tbody');   // create a new table to hold copied entries
         newTable.id = 'wkBody';
         // loop to insert all database entries into updated table
         for(var entry in response) {
