@@ -1,0 +1,17 @@
+<h1>GET Request Received</h1>
+{{#if getQuery.length}}
+  <table>
+    <thead>
+      <th>Key</th>
+      <th>Value</th>
+    </thead>
+    <tbody>
+      {{#each getQuery}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}
