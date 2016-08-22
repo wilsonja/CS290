@@ -1,0 +1,33 @@
+<h1>POST Request Received</h1>
+{{#if postQuery.length}}
+  <table>
+    <thead>
+      <th>Key</th>
+      <th>Value</th>
+    </thead>
+    <tbody>
+      {{#each postQuery}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}
+{{#if postBody.length}}
+<table>
+  <thead>
+    <th>Key</th>
+    <th>Value</th>
+  </thead>
+  <tbody>
+    {{#each postBody}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
