@@ -1,5 +1,5 @@
 /* portions of the code are borrowed from the CS290 AJAX Interactions lecture */
-var apiKey = "093c64e9803a00f7c6b512ed9eae2d31";
+var apiKey = "...enter API key here...";
 
 document.addEventListener("DOMContentLoaded", bindButtons);
 
