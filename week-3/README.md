@@ -1,2 +1,2 @@
-1) create a sort function that uses a generic comparator
+1) create a sort function that uses a generic comparator</br>
 2) fix a closure error
