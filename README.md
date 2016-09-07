@@ -1,2 +1,2 @@
 # CS290
-Projects for OSU CS290-Web Development
+Projects from OSU CS290-Web Development
