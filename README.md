@@ -1,2 +1,2 @@
 # Web Development
-Projects from my Web Development course.
+Projects from Web Development course.
